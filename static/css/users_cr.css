@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.body {
+    height: 80%;
+    width: 60%;
+    align-self: center;
+    margin: 10px 0px;
+}
+table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, tr, td {
+    border: 2px solid black;
+}
+.header, .footer {
+    margin: 10px 0px 10px 275px;
+}
+.create_header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 40%;
+    margin: 10px 0px 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 40%;
+    margin-left: 410px;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.button {
+    width: 15%;
+}

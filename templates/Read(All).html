@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read (All)</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/users_cr.css') }}">
+</head>
+<body>
+    <div class=header>
+        <h1>All Users</h1>
+    </div>
+    <div class=body>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+            </tr>
+            {% for one_user in all_users %}
+            <tr>
+                <td>{{ one_user.id }}</td>
+                <td>{{ one_user.first_name }} {{ one_user.last_name }}</td>
+                <td>{{ one_user.email }}</td>
+                <td>{{ one_user.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class=footer>
+        <a href='/link'>Add a New User</a>
+    </div>
+</body>
+</html>
