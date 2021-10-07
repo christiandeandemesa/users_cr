@@ -27,6 +27,7 @@ table, th, tr, td {
 .create_header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     align-self: center;
     width: 40%;
     margin: 10px 0px 20px;
@@ -46,4 +47,23 @@ form div {
 }
 .button {
     width: 15%;
+}
+.read_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.read_body {
+    border: 2px solid black;
+    padding: 5px;
+}
+.read_header, .read_body, .read_footer {
+    margin: 20px 0px;
+    width: 30%;
+    align-self: center;
+}
+.edit_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
